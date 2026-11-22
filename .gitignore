@@ -1,0 +1,101 @@
+# ---------- 编译产物 ----------
+# 可执行文件（默认构建出的二进制，按需改成你的程序名）
+/photstatt_api
+/photstatt_api.exe
+/cmd/photstatt_api
+/cmd/photstatt_api.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go 工作区与依赖缓存
+go.work
+go.work.sum
+vendor/
+/bin/
+/dist/
+/build/
+/tmp/
+
+# ---------- 测试与覆盖率 ----------
+*.test
+*.prof
+*.pprof
+coverage.txt
+coverage.html
+coverage.out
+*.cover
+
+# ---------- 配置与环境变量 ----------
+.env
+.env.*
+!.env.example
+!.env.template
+config.local.yaml
+config.local.yml
+config.local.json
+*.local.yaml
+*.local.yml
+*.local.json
+
+# ---------- 日志与运行时数据 ----------
+*.log
+logs/
+*.pid
+*.sock
+data/
+uploads/
+storage/
+
+# ---------- 证书与密钥 ----------
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+
+# ---------- 数据库文件 ----------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ---------- 编辑器 / IDE ----------
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+# JetBrains (GoLand)
+.idea/
+*.iml
+# Neovim
+.nvim/
+*.swp
+*.swo
+*~
+# Cursor
+.cursor/
+# Zed
+.zed/
+
+# ---------- 操作系统 ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ---------- 其他 ----------
+*.tmp
+*.bak
+*.orig
+*.rej
+.docker/
+docker-compose.override.yml
