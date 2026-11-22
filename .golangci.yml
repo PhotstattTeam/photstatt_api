@@ -1,0 +1,20 @@
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  default: standard
+  enable:
+    - misspell      # 注释/字符串拼写
+    - gosec         # 安全问题
+    - unconvert     # 多余的类型转换
+    - errorlint     # error 包装与比较规范
+    - bodyclose     # HTTP body 未关闭
+    - noctx         # 发起请求没带 context
+    - sqlclosecheck # rows/conn 未关闭
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
