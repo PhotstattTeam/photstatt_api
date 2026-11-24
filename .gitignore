@@ -1,0 +1,11 @@
+# 数据库文件（本地数据，不入库）
+*.db
+*.db-shm
+*.db-wal
+
+# 编译产物
+/server
+/consiliumous-backend
+
+# 环境变量（含密钥，不入库）
+.env
